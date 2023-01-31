@@ -38,10 +38,19 @@ let interval = setInterval(function(){
 
 const audio = document.getElementById("audio1");
 const play = document.getElementById("play");
+const playS = document.getElementById("play-start");
+
 
 // function PlayAudio() { 
 //     audio.play();
 // }
+
+//Escuchar clicks en el botón play-start
+/*playS.addEventListener("click", () => {
+        console.log("Entro a evento playS");
+        playSong();
+})*/
+
 //Escuchar clicks en el botón play
 play.addEventListener("click", () => {
     if (audio.paused) {
