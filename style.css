@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --letra-cursiva: #5c4a23;
+    --boton: #d8b87f;
+    --letra-negra: #3b291e;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Bad Script', cursive;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Dancing Script', cursive;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: var(--letra-cursiva);
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: var(--letra-cursiva);
+    font-size: 2rem;
+}
+
+p {
+    font-family: 'Bad Script', cursive;
+    color: var(--letra-negra);
+}
+
+/*---------------------------- HEADER------------------ */
+header {
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    background-image: url(./assets/img/portada_letra.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.link-music img{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor:pointer;
+}
+
+/* ------------------------------------------------- */
+
+/* SECCION INVITACION */
+.invitacion-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.invitacion-container img{
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
+
+.invitacion-container h2 {
+    margin-top: 7rem;
+}
+
+.invitacion-container  p {
+    font-size: 2rem;
+    margin: 2rem;
+    margin-bottom: 2rem;
+}
+/* ------------------------------- */
+
+.nuestra_boda {
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    background-image: url(./assets/img/boda_historia.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* INFORMACIÓN DEL SALON */
+.main-salon-container{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+.main-salon-container h2 {
+    margin-top: 50px;
+}  
+.img-container--slider {
+    display: flex;
+    height: 260px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.img-container--card{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 190px;
+    max-width: 320px;
+    height: 180px;
+    margin: 50px 20px 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.img-container--card img{
+    width: 200px;
+    height: 160px;
+}
+
+/* MAPA */
+.mapa {
+    margin-top: 3rem;
+}
+.mapa p {
+  font-family: 'Cormorant Garamond', serif;;
+  font-size: 2rem;   
+  text-align: justify;
+  line-height: 1.8rem;
+  margin: 0 30px 30px 30px;
+  
+}
+.mapa iframe{
+    width: 250px;
+    height: 200px;
+}
+/* ----------------------------------------- */
+
+/* PROGRAMA COMPLETO */
+.programa-completo {
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    background-image: url(./assets/img/programa_completo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* SECCION PADRES DE LA NOVIA */
+.padres_novios {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content:center; */
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    text-align: center;
+}
+
+.padres_novios h2 {
+    margin-top: 10rem;
+}
+
+.padres_novios .novia h3 {
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+.padres_novios .novia p {
+    font-size: 2rem;
+    /* margin-bottom: 1rem; */
+}
+
+.padres_novios .cruz {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./assets/img/cruz.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* ---------------------------------- */
+
+/* SECCION CONTADOR  */
+.contador-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    text-align: center;
+}
+.contador-container h2{
+    /* padding-top: 3rem; */
+    padding-bottom: 2rem;
+}
+.countdown {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-self: center;
+}
+.countdown div{
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    width: 80px;
+}
+.countdown p {
+    display: grid;
+    place-items: center;
+    border: solid 1px var(--letra-negra);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: var(--letra-negra);
+    font-size: 2rem;
+    font-weight: bold;
+    background: #d8b87f; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fff,#fbd786, #cda588); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fff, #fbd786, #cda588); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.countdown span {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    color: var(--letra-cursiva);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.contador-container img{
+    width: 300px;
+    height: 300px;
+    align-self: center;
+}
+.contador-container h3{
+    font-size: 2.5rem;
+}
+.final-sms {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+    transform: translateX(-100%);
+    transition: ease-in-out 0.5s;
+    background-color: #333;
+}
+/* -------------------------------------------------------------- */
+
+/* SECCION REGALOS */
+.regalos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    background-image: url(./assets/img/fondo_base.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+}
+
+.regalos  p {
+    font-size: 2rem;
+    margin: 2rem;
+    margin-bottom: 2rem;
+}
+
+.regalos img {
+    width: 250px;
+    height: 250px;
+    align-self: center;
+}
+/* -------------------------------------- */
+
+/* SECCION GRACIAS */
+.gracias {
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    background-image: url(./assets/img/gracias.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* ------------------------------------------------ */
+
+/* .fa-play {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./assets/img/play.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.fa-pause {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./assets/img/pause.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+
