@@ -161,15 +161,16 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 }
-/* SECCION PADRES DE LA NOVIA */
+/* SECCION PADRES DE LOS NOVIOS */
 .padres_novios {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* justify-content:center; */
+    justify-content:center; 
+    align-items: center;
     width: 100%;
     min-width: 320px;
-    height: auto;
+    height: 100vh;
     text-align: center;
 }
 
@@ -329,7 +330,44 @@ header {
     background-repeat: no-repeat;
 } */
 
-/* ---------------START------------------ */
+/* CONFIRMAR ASISTENCIA */
+
+
+.confirmacion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.confirmacion-container h2 {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.confirmacion-container  h3 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.confirmacion-container button {
+    /* width: 150; */
+    /*height: 31px; */
+    background: var(--letra-cursiva); 
+    border-color: #cda588;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 5px;
+    color: #cda588;
+    font-family: 'Cormorant Garamond', serif;
+}
+
  
 
 
