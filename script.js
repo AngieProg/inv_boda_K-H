@@ -30,7 +30,6 @@ let interval = setInterval(function(){
     if(distance < 0){
         clearInterval(interval);
         $finalMessage.style.transform = 'translateX(0)';
-        console.log("Entro");
     }
 },1000);
 
@@ -38,12 +37,7 @@ let interval = setInterval(function(){
 
 const audio = document.getElementById("audio1");
 const play = document.getElementById("play");
-const abrir = document.getElementById("abrir");
 
-////Escuchar clicks en el botón abrir
-/*abrir.addEventListener("click", () => {
-        playSong();
-})*/
 
 //Escuchar clicks en el botón play
 play.addEventListener("click", () => {
@@ -68,15 +62,9 @@ function pauseSong() {
 
 function updateControls() {
     if(audio.paused){
-        console.log("Esta en pausa");
         document.getElementById("img1").src="./assets/img/music_play.png";
-        // play.classList.remove("fa-pause");
-        // play.classList.add("fa-play");
     }else{
-        console.log("Esta en play");
         document.getElementById("img1").src="./assets/img/musica_pausa.png";
-        // play.classList.remove("fa-play");
-        // play.classList.add("fa-pause");
     }
 }
 
