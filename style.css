@@ -48,7 +48,7 @@ header {
 }
 
 .link-music img{
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 20px;
     width: 50px;
@@ -356,19 +356,16 @@ header {
 }
 
 .confirmacion-container  p{
-    /* margin-top: 2rem; */
     margin-bottom: 2rem;
     font-family: 'Dancing Script', cursive;
     font-size: 2rem;
 }
 
 .confirmacion-container button {
-    /* width: 150; */
-    /*height: 31px; */
     background: var(--letra-cursiva);
     border-color: #cda588;
     border-radius: 5px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 5px;
     color: #cda588;
     font-family: 'Cormorant Garamond', serif;
