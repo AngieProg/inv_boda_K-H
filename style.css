@@ -48,7 +48,7 @@ header {
 }
 
 .link-music img{
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 20px;
     width: 50px;
@@ -107,7 +107,7 @@ header {
 }
 .main-salon-container h2 {
     margin-top: 50px;
-}  
+}
 .img-container--slider {
     display: flex;
     height: 260px;
@@ -139,11 +139,11 @@ header {
 }
 .mapa p {
   font-family: 'Cormorant Garamond', serif;;
-  font-size: 2rem;   
+  font-size: 2rem;
   text-align: justify;
   line-height: 1.8rem;
   margin: 0 30px 30px 30px;
-  
+
 }
 .mapa iframe{
     width: 250px;
@@ -166,7 +166,7 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content:center; 
+    justify-content:center;
     align-items: center;
     width: 100%;
     min-width: 320px;
@@ -356,19 +356,29 @@ header {
 }
 
 .confirmacion-container  p{
+<<<<<<< HEAD
     /* margin-top: 2rem; */
+=======
+>>>>>>> gh-pages
     margin-bottom: 2rem;
     font-family: 'Dancing Script', cursive;
     font-size: 2rem;
 }
 
 .confirmacion-container button {
+<<<<<<< HEAD
     /* width: 150; */
     /*height: 31px; */
     background: var(--letra-cursiva);
     border-color: #cda588;
     border-radius: 5px;
     font-size: 1.5rem;
+=======
+    background: var(--letra-cursiva);
+    border-color: #cda588;
+    border-radius: 5px;
+    font-size: 1.8rem;
+>>>>>>> gh-pages
     padding: 5px;
     color: #cda588;
     font-family: 'Cormorant Garamond', serif;

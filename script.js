@@ -38,18 +38,6 @@ let interval = setInterval(function(){
 
 const audio = document.getElementById("audio1");
 const play = document.getElementById("play");
-const playS = document.getElementById("play-start");
-
-
-// function PlayAudio() { 
-//     audio.play();
-// }
-
-//Escuchar clicks en el botón play-start
-/*playS.addEventListener("click", () => {
-        console.log("Entro a evento playS");
-        playSong();
-})*/
 
 //Escuchar clicks en el botón play
 play.addEventListener("click", () => {
@@ -62,21 +50,27 @@ play.addEventListener("click", () => {
 
 //Reproducir canción
 function playSong() {
-     audio.play();
+    audio.play();
+    updateControls();
 }
 
 //Pausar canción
 function pauseSong() {
     audio.pause();
+    updateControls();
 }
 
 function updateControls() {
-    if(audio.pause){
-        play.classList.remove("fa-pause");
-        play.classList.add("fa-play");
+    if(audio.paused){
+        console.log("Esta en pausa");
+        document.getElementById("img1").src="./assets/img/music_play.png";
+        // play.classList.remove("fa-pause");
+        // play.classList.add("fa-play");
     }else{
-        play.classList.remove("fa-play");
-        play.classList.add("fa-pause");
+        console.log("Esta en play");
+        document.getElementById("img1").src="./assets/img/musica_pausa.png";
+        // play.classList.remove("fa-play");
+        // play.classList.add("fa-pause");
     }
 }
 
