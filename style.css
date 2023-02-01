@@ -332,7 +332,6 @@ header {
 
 /* CONFIRMAR ASISTENCIA */
 
-
 .confirmacion-container {
     display: flex;
     flex-direction: column;
@@ -352,14 +351,21 @@ header {
 
 .confirmacion-container  h3 {
     margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.3rem;
+}
+
+.confirmacion-container  p{
+    /* margin-top: 2rem; */
     margin-bottom: 2rem;
+    font-family: 'Dancing Script', cursive;
     font-size: 2rem;
 }
 
 .confirmacion-container button {
     /* width: 150; */
     /*height: 31px; */
-    background: var(--letra-cursiva); 
+    background: var(--letra-cursiva);
     border-color: #cda588;
     border-radius: 5px;
     font-size: 1.5rem;
