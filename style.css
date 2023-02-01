@@ -36,6 +36,14 @@ p {
     color: var(--letra-negra);
 }
 
+/* ----------------------PRE--------------- */
+.pre{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*---------------------------- HEADER------------------ */
 header {
     width: 100%;
@@ -161,42 +169,43 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 }
-/* SECCION PADRES DE LOS NOVIOS */
-.padres_novios {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
+
+/* PROGRAMA BONITO */
+.programa {
     width: 100%;
-    min-width: 320px;
     height: 100vh;
-    text-align: center;
-}
-
-.padres_novios h2 {
-    margin-top: 10rem;
-}
-
-.padres_novios .novia h3 {
-    margin-top: 3rem;
-    font-size: 3rem;
-}
-
-.padres_novios .novia p {
-    font-size: 2rem;
-    /* margin-bottom: 1rem; */
-}
-
-.padres_novios .cruz {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url(./assets/img/cruz.png);
+    background-image: url(./assets/img/fondo_base.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+.programa h2{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+.programa .menu {
+    display: flex;
+}
+
+.programa .menu .menu-izquierdo{
+    width: 50%;
+    text-align:right;
+}  
+.menu-izquierdo .icon{
+    padding: 20px;
+}
+.icon img{
+    width: 50px;
+    height: 50px;
+}
+.menu-derecho .texto{
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+.texto .hora{
+    font-size: 1.5rem;
+    line-height: 1rem;
+} 
 /* ---------------------------------- */
 
 /* SECCION CONTADOR  */
@@ -311,25 +320,6 @@ header {
 }
 /* ------------------------------------------------ */
 
-/* .fa-play {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url(./assets/img/play.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.fa-pause {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url(./assets/img/pause.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
-
 /* CONFIRMAR ASISTENCIA */
 
 .confirmacion-container {
@@ -356,29 +346,16 @@ header {
 }
 
 .confirmacion-container  p{
-<<<<<<< HEAD
-    /* margin-top: 2rem; */
-=======
->>>>>>> gh-pages
     margin-bottom: 2rem;
     font-family: 'Dancing Script', cursive;
     font-size: 2rem;
 }
 
 .confirmacion-container button {
-<<<<<<< HEAD
-    /* width: 150; */
-    /*height: 31px; */
-    background: var(--letra-cursiva);
-    border-color: #cda588;
-    border-radius: 5px;
-    font-size: 1.5rem;
-=======
     background: var(--letra-cursiva);
     border-color: #cda588;
     border-radius: 5px;
     font-size: 1.8rem;
->>>>>>> gh-pages
     padding: 5px;
     color: #cda588;
     font-family: 'Cormorant Garamond', serif;

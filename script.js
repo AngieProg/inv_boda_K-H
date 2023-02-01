@@ -38,6 +38,12 @@ let interval = setInterval(function(){
 
 const audio = document.getElementById("audio1");
 const play = document.getElementById("play");
+const abrir = document.getElementById("abrir");
+
+////Escuchar clicks en el botón abrir
+/*abrir.addEventListener("click", () => {
+        playSong();
+})*/
 
 //Escuchar clicks en el botón play
 play.addEventListener("click", () => {
