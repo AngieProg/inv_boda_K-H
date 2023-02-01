@@ -47,7 +47,7 @@ header {
     font-family: 'Cormorant Garamond', serif;;
     font-size: 3rem;   
     text-align: center;
-    line-height: 1.8rem;
+    line-height: 3.5rem;
     margin: 0 30px 30px 30px;
     
 }
@@ -57,24 +57,28 @@ header {
     height: 280px;
 }
 
-.programa-completo {
-    width: 100%;
-    min-width: 320px;
-    height: 100vh;
-    background-image: url(../assets/img/media_grande/programa_g.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.menu-izquierdo .icon{
+    padding: 20px;
 }
-
-.padres_novios .novia p {
+.icon img{
+    width: 80px;
+    height: 80px;
+}
+.menu-derecho .texto{
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+.texto .hora{
     font-size: 3rem;
+    line-height: 1rem;
+} 
+.texto .itineario{
+    font-size: 2.5rem;
+} 
+.programa h2 {
+    font-size: 9rem;
 }
 
-.padres_novios .novia h3 {
-    margin-top: 3rem;
-    font-size: 5rem;
-}
 
 .countdown p {
     display: grid;
@@ -103,6 +107,9 @@ header {
     font-size: 3.5rem;
 }
 
+/* .regalos{
+    max-width: 780px;
+} */
 .regalos  p {
     font-size: 3rem;
     margin: 2rem;
@@ -115,13 +122,3 @@ header {
     align-self: center;
 }
 
-.gracias {
-    width: 100%;
-    min-width: 320px;
-    height: 100vh;
-    background-image: url(../assets/img/media_grande/gracias_g.jpg
-    );
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}

@@ -180,7 +180,7 @@ header {
     background-repeat: no-repeat;
 }
 .programa h2{
-    padding-top: 5rem;
+    padding-top: 7rem;
     padding-bottom: 3rem;
 }
 .programa .menu {
@@ -307,21 +307,6 @@ header {
 }
 /* -------------------------------------- */
 
-/* SECCION GRACIAS */
-.gracias {
-    width: 100%;
-    min-width: 320px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* padding-top: 1rem; */
-}
-.gracias h2{
-    padding: 4rem;
-}
-/* ------------------------------------------------ */
-
 /* CONFIRMAR ASISTENCIA */
 
 .confirmacion-container {
@@ -332,7 +317,7 @@ header {
     min-width: 320px;
     height: auto;
     text-align: center;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
 }
 
 .confirmacion-container h2 {
@@ -362,3 +347,23 @@ header {
     color: #cda588;
     font-family: 'Cormorant Garamond', serif;
 }
+
+/* SECCION GRACIAS */
+.gracias {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gracias h2{
+    padding: 3rem;
+}
+.gracias img {
+    width: 250px;
+    height: 250px;
+    padding-top: 2rem;
+}
+/* ------------------------------------------------ */
