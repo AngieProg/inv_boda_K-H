@@ -178,9 +178,11 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    place-content: center;
+    /* display: flex;
+     flex-direction: column; 
+    justify-content: center; */
 }
 .programa h2{
     padding-top: 6rem;
@@ -203,8 +205,8 @@ header {
     height: 70px;
 }
 .menu-derecho .texto{
-    padding-top: 20px;
-    padding-bottom: 35px;
+    padding-top: 15px;
+    padding-bottom: 30px;
 }
 .texto .hora{
     font-size: 3rem;
@@ -213,6 +215,10 @@ header {
 .texto .itineario{
     font-size: 1.5em;
     line-height: 1rem;
+}
+.texto .itineario1{
+    font-size: 1.5em;
+    line-height: 2rem;
 }
 /* ---------------------------------- */
 
