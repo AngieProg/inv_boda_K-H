@@ -73,17 +73,15 @@ function updateControls() {
     const {value: musica} = await Swal.fire({
         title: 'Invitación Boda Karen & Hector',
         html: '<b class="text-alert">¿Ingresar con sonido?</b>',
-        // text: '¿Ingresar con sonido?',
         confirmButtonText: 'Ingresar',
         //grow:'fullscreen', //column, roww. Pantalla completa
         background: 'black',
         backdrop: true,//obscurece la pantalla de abajo
-        // padding: '2rem',
         input: 'radio',
         inputValue: '',
         inputOptions: {
-            reproducir: 'SI',
-            silencio: 'NO'
+            reproducir: 'Si',
+            silencio: 'No'
         },
         customClass: {
             title: 'title-alert',
@@ -94,9 +92,7 @@ function updateControls() {
         buttonsStyling: false,
         showCloseButton: true,
         imageUrl: './assets/img/sobre_sello.png',
-        // imageWidth: '90%',
-        // imageHeight: '300px',
-        imageAlt: "imagen alt",
+        imageAlt: "Sobre de invitación",
     })
 
      if (musica=='reproducir'){
