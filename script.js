@@ -75,9 +75,9 @@ function updateControls() {
         html: '<b class="text-alert">¿Ingresar con sonido?</b>',
         // text: '¿Ingresar con sonido?',
         confirmButtonText: 'Ingresar',
-        grow:'fullscreen', //column, roww. Pantalla completa
+        //grow:'fullscreen', //column, roww. Pantalla completa
         background: 'black',
-        //backdrop: true,//obscurece la pantalla de abajo
+        backdrop: true,//obscurece la pantalla de abajo
         // padding: '2rem',
         input: 'radio',
         inputValue: '',
