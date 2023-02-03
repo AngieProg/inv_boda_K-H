@@ -68,4 +68,43 @@ function updateControls() {
     }
 }
 
+//-----------------------CODIGO SWEETALERT2-------------------------------------------
+(async() => {
+    const {value: musica} = await Swal.fire({
+        title: 'Invitación Boda Karen & Hector',
+        html: '<b class="text-alert">¿Ingresar con sonido?</b>',
+        // text: '¿Ingresar con sonido?',
+        confirmButtonText: 'Ingresar',
+        grow:'fullscreen', //column, roww. Pantalla completa
+        background: 'black',
+        //backdrop: true,//obscurece la pantalla de abajo
+        // padding: '2rem',
+        input: 'radio',
+        inputValue: '',
+        inputOptions: {
+            reproducir: 'SI',
+            silencio: 'NO'
+        },
+        customClass: {
+            title: 'title-alert',
+            text:'text-alert',
+            confirmButton:'button-alert',
+            input:'input-alert'
+        },
+        buttonsStyling: false,
+        showCloseButton: true,
+        imageUrl: './assets/img/sobre_sello.png',
+        // imageWidth: '90%',
+        // imageHeight: '300px',
+        imageAlt: "imagen alt",
+    })
+
+     if (musica=='reproducir'){
+          console.log ("La invitación comenzará con música");
+          playSong();
+        //   audio.play();
+     }else{
+        console.log("Reproducción en silencio");
+     }
+})();
 

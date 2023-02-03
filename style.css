@@ -381,3 +381,26 @@ header {
     padding-top: 2rem;
 }
 /* ------------------------------------------------ */
+
+.title-alert {
+    font-size: 3rem !important;
+    margin: 10px !important;
+}
+.text-alert {
+    font-size: 2rem;
+}
+ .button-alert {
+    background: #cda588;
+    border-color: var(--letra-cursiva);  
+    border-radius: 5px;
+    font-size: 2.5rem;
+    padding: 5px;
+    color: var(--letra-negra);
+    font-family: 'Dancing Script', cursive;
+    font-weight: 3rem;
+ }
+.input-alert{
+    background-color: black !important;
+    font-size: 2rem !important;
+    /* color: white; */
+} 
